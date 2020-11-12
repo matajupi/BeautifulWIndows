@@ -1,2 +1,5 @@
-Œv‰æ.docx
+*.docx
+*.exe
+*.obj
+*.dll
 .vs/
