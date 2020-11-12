@@ -1,0 +1,9 @@
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\bin\Debug\BWForm.exe.config
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\bin\Debug\BWForm.exe
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\bin\Debug\BWForm.pdb
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Debug\BWForm.csprojAssemblyReference.cache
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Debug\BWForm.Properties.Resources.resources
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Debug\BWForm.csproj.GenerateResource.cache
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Debug\BWForm.csproj.CoreCompileInputs.cache
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Debug\BWForm.exe
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Debug\BWForm.pdb

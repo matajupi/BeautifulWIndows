@@ -1,0 +1,9 @@
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\bin\Debug\BeautifulWindows.exe.config
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\bin\Debug\BeautifulWindows.exe
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\bin\Debug\BeautifulWindows.pdb
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.csprojAssemblyReference.cache
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.Properties.Resources.resources
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.csproj.GenerateResource.cache
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.csproj.CoreCompileInputs.cache
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.exe
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.pdb
