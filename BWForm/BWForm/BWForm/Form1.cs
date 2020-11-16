@@ -16,10 +16,5 @@ namespace BWForm
         {
             InitializeComponent();
         }
-
-        protected override void OnLoad(EventArgs e)
-        {
-            this.Size = new Size(150, 150);
-        }
     }
 }

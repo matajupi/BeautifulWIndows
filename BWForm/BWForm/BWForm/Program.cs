@@ -20,8 +20,10 @@ namespace BWForm
             Application.Run(new Form1()
             {
                 Location = new Point(int.Parse(args[0]), int.Parse(args[1])),
+                Size = new Size(int.Parse(args[2]), int.Parse(args[3])),
                 StartPosition = FormStartPosition.Manual,
             });
         }
+
     }
 }

@@ -6,3 +6,4 @@ C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Re
 C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.csproj.CoreCompileInputs.cache
 C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.exe
 C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.pdb
+C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.csprojAssemblyReference.cache

@@ -18,10 +18,12 @@ namespace BeautifulWindows
         static void Main(string[] args)
         {
             var tasks = new List<Task>();
-            tasks.Add(Task.Run(() => BWAnimator.ShowHorizontalLine(100, 2000)));
+            // tasks.Add(Task.Run(() => BWAnimator.ShowHorizontalLine(100, 2000)));
             // tasks.Add(Task.Run(() => BWAnimator.ShowVerticalLine(100, 2000)));
-            tasks.Add(Task.Run(() => BWAnimator.ShowHorizontalLine(200, 1000)));
+            // tasks.Add(Task.Run(() => BWAnimator.ShowHorizontalLine(200, 1000)));
             // tasks.Add(Task.Run(() => BWAnimator.ShowVerticalLine(200, 2000)));
+            tasks.Add(Task.Run(() => BWAnimator.Fireworks(3500, 50, true)));
+            // tasks.Add(Task.Run(() => BWAnimator.CenterToEnd(3500, 50, false)));
             Task.WaitAll(tasks.ToArray());
             Console.ReadKey();
         }
