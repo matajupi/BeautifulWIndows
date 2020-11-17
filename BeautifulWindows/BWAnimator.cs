@@ -15,10 +15,10 @@ namespace BeautifulWindows
     class BWAnimator
     {
         static readonly string BWFORM_PATH = @"C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\bin\Release\BWForm.exe";
-        static readonly int DISPLAY_WIDTH = Screen.PrimaryScreen.Bounds.Width;
-        static readonly int DISPLAY_HEIGHT = Screen.PrimaryScreen.Bounds.Height;
-        static readonly int DISPLAY_CENTER_X = DISPLAY_WIDTH / 2;
-        static readonly int DISPLAY_CENTER_Y = DISPLAY_HEIGHT / 2;
+        public static readonly int DISPLAY_WIDTH = Screen.PrimaryScreen.Bounds.Width;
+        public static readonly int DISPLAY_HEIGHT = Screen.PrimaryScreen.Bounds.Height;
+        public static readonly int DISPLAY_CENTER_X = DISPLAY_WIDTH / 2;
+        public static readonly int DISPLAY_CENTER_Y = DISPLAY_HEIGHT / 2;
         static readonly int WINDOW_WIDTH = 150;
         static readonly int WINDOW_HEIGHT = 150;
         static readonly int WINDOW_INTERVAL_X = WINDOW_WIDTH - WINDOW_WIDTH / 3;
@@ -37,52 +37,71 @@ namespace BeautifulWindows
             p.Close();
         }
 
-        public static void ShowHorizontalLine(int pY, int time)
-        {
-            var interval = time / NORMAL_INTERVAL_PERCENT;
-            ShowHorizontalLine(pY, time, interval);
-            
-        }
-
-        public static void ShowHorizontalLine(int pY, int time, int interval)
+        private static void ShowLoop(int start, int end, int interval, Func<int, Task> show)
         {
             var tasks = new List<Task>();
+            if (start > end)
+            {
+                for (var i = start; end < i; i--)
+                {
+                    tasks.Add(show(i));
+                    Thread.Sleep(interval);
+                }
+                Task.WaitAll(tasks.ToArray());
+                return;
+            }
+
+            for (var i = start; end > i; i++)
+            {
+                tasks.Add(show(i));
+                Thread.Sleep(interval);
+            }
+            Task.WaitAll(tasks.ToArray());
+        }
+
+        public static void ShowHorizontalLine(int pY, int time, bool reverse=false)
+        {
+            var interval = time / NORMAL_INTERVAL_PERCENT;
+            ShowHorizontalLine(pY, time, interval, reverse);   
+        }
+
+        public static void ShowHorizontalLine(int pY, int time, int interval, bool reverse=false)
+        {
             var loop = DISPLAY_WIDTH / WINDOW_INTERVAL_X;
             var eX = DISPLAY_WIDTH / loop;
-            for (var i = 0; loop > i; i++)
+            if (reverse)
             {
-                tasks.Add(ShowBWForm(i * eX, pY, time));
-                Thread.Sleep(interval);
+                ShowLoop(loop, 0, interval, x => ShowBWForm((x - 1) * eX, pY, time));
+                return;
             }
-            Task.WaitAll(tasks.ToArray());
+            ShowLoop(0, loop, interval, x => ShowBWForm(x * eX, pY, time));
         }
 
-        public static void ShowVerticalLine(int pX, int time)
+        public static void ShowVerticalLine(int pX, int time, bool reverse=false)
         {
             var interval = time / NORMAL_INTERVAL_PERCENT;
-            ShowVerticalLine(pX, time, interval);
+            ShowVerticalLine(pX, time, interval, reverse);
         }
 
-        public static void ShowVerticalLine(int pX, int time, int interval)
+        public static void ShowVerticalLine(int pX, int time, int interval, bool reverse=false)
         {
-            var tasks = new List<Task>();
             var loop = DISPLAY_HEIGHT / WINDOW_INTERVAL_Y;
             var eY = DISPLAY_HEIGHT / loop;
-            for (var i = 0; loop > i; i++)
+            if (reverse)
             {
-                tasks.Add(ShowBWForm(pX, i * eY, time));
-                Thread.Sleep(interval);
+                ShowLoop(loop, 0, interval, x => ShowBWForm(pX, (x - 1) * eY, time));
+                return;
             }
-            Task.WaitAll(tasks.ToArray());
+            ShowLoop(0, loop, interval, x => ShowBWForm(pX, x * eY, time));
         }
 
-        public static void Fireworks(int time, bool centerToEnd)
+        public static void Fireworks(int time, bool centerToEnd=false)
         {
             var interval = time / NORMAL_INTERVAL_PERCENT;
             Fireworks(time, interval, centerToEnd);
         }
 
-        public static void Fireworks(int time, int interval, bool centerToEnd)
+        public static void Fireworks(int time, int interval, bool centerToEnd=false)
         {
             var tasks = new List<Task>();
             tasks.Add(Task.Run(() => OneLine(time, interval, false, false, centerToEnd)));
@@ -94,7 +113,6 @@ namespace BeautifulWindows
 
         private static void OneLine(int time, int interval, bool reverseX, bool reverseY, bool reverseLine)
         {
-            var tasks = new List<Task>();
             var loop = (DISPLAY_CENTER_X / WINDOW_INTERVAL_X) * 2;
             var eX = DISPLAY_CENTER_X / loop;
             var eY = DISPLAY_CENTER_Y / loop;
@@ -104,32 +122,44 @@ namespace BeautifulWindows
 
             if (reverseLine)
             {
-                for (var i = loop; 0 < i; i--)
-                {
-                    tasks.Add(ShowBWForm(eX * i + DISPLAY_CENTER_X, eY * i + DISPLAY_CENTER_Y, time));
-                    Thread.Sleep(interval);
-                }
-                Task.WaitAll(tasks.ToArray());
+                ShowLoop(loop, 0, interval, x => ShowBWForm(eX * (x - 1) + DISPLAY_CENTER_X, eY * (x - 1) + DISPLAY_CENTER_Y, time));
                 return;
             }
-
-            for (var i = 0; loop > i; i++)
-            {
-                tasks.Add(ShowBWForm(eX * i + DISPLAY_CENTER_X, eY * i + DISPLAY_CENTER_Y, time));
-                Thread.Sleep(interval);
-            }
-            Task.WaitAll(tasks.ToArray());
+            ShowLoop(0, loop, interval, x => ShowBWForm(eX * x + DISPLAY_CENTER_X, eY * x + DISPLAY_CENTER_Y, time));
         }
 
-        public static void ShowSineWaveHorizontalLine(int center, int r, int magn, int srad, int time)
+        public static void ShowSineWaveHorizontalLine(int center, double magn, double period, double rad, int time, bool reverse=false)
         {
             var interval = time / NORMAL_INTERVAL_PERCENT;
-            var tasks = new List<Task>();
-            var rad = 0 - srad;
-            for (var i = 0; 15 > i; i++)
+            ShowSineWaveHorizontalLine(center, magn, period, rad, time, interval, reverse);
+        }
+
+        public static void ShowSineWaveHorizontalLine(int center, double magn, double period, double rad, int time, int interval, bool reverse=false)
+        {
+            var loop = (DISPLAY_WIDTH / WINDOW_INTERVAL_X) * 2 * (period < 1 ? 1 : (int)period);
+            var eX = DISPLAY_WIDTH / loop;
+            var plusRad = 2 * Math.PI / loop;
+            if (reverse)
             {
-                tasks.Add(null);
+                ShowLoop(loop, 0, interval, x =>
+                {
+                    var task = ShowBWForm(eX * (x - 1), (int)(magn * Math.Sin(period * rad) * DISPLAY_CENTER_Y + center), time);
+                    rad += plusRad;
+                    return task;
+                });
+                return;
             }
+            ShowLoop(0, loop, interval, x =>
+            {
+                var task = ShowBWForm(eX * x, (int)(magn * Math.Sin(period * rad) * DISPLAY_CENTER_Y + center), time);
+                rad += plusRad;
+                return task;
+            });
+        }
+
+        public static void ShowSineWaveVerticalLine(int center, double magn, int period, double rad, int time, int interval, bool reverse=false)
+        {
+            
         }
     }
 }
