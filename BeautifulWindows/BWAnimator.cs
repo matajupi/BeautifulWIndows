@@ -24,6 +24,8 @@ namespace BeautifulWindows
         static readonly int WINDOW_INTERVAL_X = WINDOW_WIDTH - WINDOW_WIDTH / 3;
         static readonly int WINDOW_INTERVAL_Y = WINDOW_HEIGHT - WINDOW_HEIGHT / 3;
         static readonly int NORMAL_INTERVAL_PERCENT = 4;
+        static readonly int Y_MAGN = 2;
+        static readonly int X_MAGN = 5;
 
         public static async Task ShowBWForm(int pX, int pY, int time)
         {
@@ -113,7 +115,7 @@ namespace BeautifulWindows
 
         private static void OneLine(int time, int interval, bool reverseX, bool reverseY, bool reverseLine)
         {
-            var loop = (DISPLAY_CENTER_X / WINDOW_INTERVAL_X) * 2;
+            var loop = (DISPLAY_CENTER_X / WINDOW_INTERVAL_X) * Y_MAGN;
             var eX = DISPLAY_CENTER_X / loop;
             var eY = DISPLAY_CENTER_Y / loop;
 
@@ -136,7 +138,7 @@ namespace BeautifulWindows
 
         public static void ShowSineWaveHorizontalLine(int center, double magn, double period, double rad, int time, int interval, bool reverse=false)
         {
-            var loop = (DISPLAY_WIDTH / WINDOW_INTERVAL_X) * 2 * (period < 1 ? 1 : (int)period);
+            var loop = (DISPLAY_WIDTH / WINDOW_INTERVAL_X) * Y_MAGN * (period < 1 ? 1 : (int)period);
             var eX = DISPLAY_WIDTH / loop;
             var plusRad = 2 * Math.PI / loop;
             if (reverse)
@@ -157,9 +159,33 @@ namespace BeautifulWindows
             });
         }
 
-        public static void ShowSineWaveVerticalLine(int center, double magn, int period, double rad, int time, int interval, bool reverse=false)
+        public static void ShowSineWaveVerticalLine(int center, double magn, double period, double rad, int time, bool reverse=false)
         {
-            
+            var interval = time / NORMAL_INTERVAL_PERCENT;
+            ShowSineWaveVerticalLine(center, magn, period, rad, time, interval, reverse);
+        }
+
+        public static void ShowSineWaveVerticalLine(int center, double magn, double period, double rad, int time, int interval, bool reverse=false)
+        {
+            var loop = (DISPLAY_HEIGHT / WINDOW_INTERVAL_Y) * X_MAGN * (period < 1 ? 1 : (int)period);
+            var eY = DISPLAY_HEIGHT / loop;
+            var plusRad = 2 * Math.PI / loop;
+            if (reverse)
+            {
+                ShowLoop(loop, 0, interval, x =>
+                {
+                    var task = ShowBWForm((int)(magn * Math.Sin(period * rad) * DISPLAY_CENTER_X + center), eY * (x - 1), time);
+                    rad += plusRad;
+                    return task;
+                });
+                return;
+            }
+            ShowLoop(0, loop, interval, x =>
+            {
+                var task = ShowBWForm((int)(magn * Math.Sin(period * rad) * DISPLAY_CENTER_X + center), eY * x, time);
+                rad += plusRad;
+                return task;
+            });
         }
     }
 }
