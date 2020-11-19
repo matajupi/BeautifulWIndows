@@ -97,23 +97,23 @@ namespace BeautifulWindows
             ShowLoop(0, loop, interval, x => ShowBWForm(pX, x * eY, time));
         }
 
-        public static void Fireworks(int time, bool centerToEnd=false)
+        public static void ShowFireworks(int time, bool endToCenter=false)
         {
             var interval = time / NORMAL_INTERVAL_PERCENT;
-            Fireworks(time, interval, centerToEnd);
+            ShowFireworks(time, interval, endToCenter);
         }
 
-        public static void Fireworks(int time, int interval, bool centerToEnd=false)
+        public static void ShowFireworks(int time, int interval, bool endToCenter=false)
         {
             var tasks = new List<Task>();
-            tasks.Add(Task.Run(() => OneLine(time, interval, false, false, centerToEnd)));
-            tasks.Add(Task.Run(() => OneLine(time, interval, true, true, centerToEnd)));
-            tasks.Add(Task.Run(() => OneLine(time, interval, true, false, centerToEnd)));
-            tasks.Add(Task.Run(() => OneLine(time, interval, false, true, centerToEnd)));
+            tasks.Add(Task.Run(() => ShowOneLine(time, interval, false, false, endToCenter)));
+            tasks.Add(Task.Run(() => ShowOneLine(time, interval, true, true, endToCenter)));
+            tasks.Add(Task.Run(() => ShowOneLine(time, interval, true, false, endToCenter)));
+            tasks.Add(Task.Run(() => ShowOneLine(time, interval, false, true, endToCenter)));
             Task.WaitAll(tasks.ToArray());
         }
 
-        private static void OneLine(int time, int interval, bool reverseX, bool reverseY, bool reverseLine)
+        private static void ShowOneLine(int time, int interval, bool reverseX, bool reverseY, bool reverseLine)
         {
             var loop = (DISPLAY_CENTER_X / WINDOW_INTERVAL_X) * Y_MAGN;
             var eX = DISPLAY_CENTER_X / loop;
