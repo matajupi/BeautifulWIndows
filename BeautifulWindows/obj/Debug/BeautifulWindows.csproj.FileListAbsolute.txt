@@ -7,3 +7,12 @@ C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\
 C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.csproj.CoreCompileInputs.cache
 C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.exe
 C:\Users\kousu\source\repos\Project\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.csprojAssemblyReference.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.Properties.Resources.resources
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.csproj.GenerateResource.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.csproj.CoreCompileInputs.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BeautifulWindows.exe.config
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BeautifulWindows.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BeautifulWindows.pdb

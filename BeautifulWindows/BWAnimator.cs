@@ -17,8 +17,8 @@ namespace BeautifulWindows
         static readonly string BWFORM_PATH = @"C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\bin\Release\BWForm.exe";
         public static readonly int DISPLAY_WIDTH = Screen.PrimaryScreen.Bounds.Width;
         public static readonly int DISPLAY_HEIGHT = Screen.PrimaryScreen.Bounds.Height;
-        public static readonly int DISPLAY_CENTER_X = DISPLAY_WIDTH / 2;
-        public static readonly int DISPLAY_CENTER_Y = DISPLAY_HEIGHT / 2;
+        public static readonly int DISPLAY_CENTER_X = DISPLAY_WIDTH / 2 - 100;
+        public static readonly int DISPLAY_CENTER_Y = DISPLAY_HEIGHT / 2 - 100;
         static readonly int WINDOW_WIDTH = 150;
         static readonly int WINDOW_HEIGHT = 150;
         static readonly int WINDOW_INTERVAL_X = WINDOW_WIDTH - WINDOW_WIDTH / 3;

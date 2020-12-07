@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeautifulWindows", "BeautifulWindows\BeautifulWindows.csproj", "{5D887086-2439-4718-88E0-E936CFE913B6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThreadControl", "ThreadController\ThreadControl.csproj", "{63A6365C-BBC1-4EB7-B1AB-6AE1B25ED13A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestThreadControl", "TestThreadControl\TestThreadControl.csproj", "{24B754A4-600E-4DCC-A6E7-3401195A77A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5D887086-2439-4718-88E0-E936CFE913B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D887086-2439-4718-88E0-E936CFE913B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D887086-2439-4718-88E0-E936CFE913B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63A6365C-BBC1-4EB7-B1AB-6AE1B25ED13A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63A6365C-BBC1-4EB7-B1AB-6AE1B25ED13A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63A6365C-BBC1-4EB7-B1AB-6AE1B25ED13A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63A6365C-BBC1-4EB7-B1AB-6AE1B25ED13A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24B754A4-600E-4DCC-A6E7-3401195A77A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24B754A4-600E-4DCC-A6E7-3401195A77A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24B754A4-600E-4DCC-A6E7-3401195A77A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24B754A4-600E-4DCC-A6E7-3401195A77A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

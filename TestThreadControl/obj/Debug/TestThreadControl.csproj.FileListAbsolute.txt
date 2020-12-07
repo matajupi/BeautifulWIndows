@@ -1,0 +1,10 @@
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\bin\Debug\TestThreadControl.exe.config
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\bin\Debug\TestThreadControl.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\bin\Debug\TestThreadControl.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\bin\Debug\ThreadController.dll
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\bin\Debug\ThreadController.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\obj\Debug\TestThreadControl.csprojAssemblyReference.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\obj\Debug\TestThreadControl.csproj.CoreCompileInputs.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\obj\Debug\TestThreadControl.csproj.CopyComplete
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\obj\Debug\TestThreadControl.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestThreadControl\obj\Debug\TestThreadControl.pdb
