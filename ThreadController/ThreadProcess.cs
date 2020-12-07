@@ -10,7 +10,7 @@ namespace ThreadControl
     {
         public string Name { get; set; }
         public ThreadController Controller;
-        public bool IsWait { get; set; }
+        public bool IsWait;
 
         public ThreadProcess()
         {

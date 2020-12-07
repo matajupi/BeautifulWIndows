@@ -1,0 +1,6 @@
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\ThreadController\bin\Release\ThreadController.dll
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\ThreadController\bin\Release\ThreadController.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\ThreadController\obj\Release\ThreadControl.csprojAssemblyReference.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\ThreadController\obj\Release\ThreadControl.csproj.CoreCompileInputs.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\ThreadController\obj\Release\ThreadController.dll
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\ThreadController\obj\Release\ThreadController.pdb
