@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 
 namespace ThreadControl
 {
@@ -10,7 +11,8 @@ namespace ThreadControl
     {
         public string Name { get; set; }
         public ThreadController Controller;
-        public bool IsWait;
+        public bool IsWait { get; set; }
+
 
         public ThreadProcess()
         {
@@ -54,7 +56,6 @@ namespace ThreadControl
             var processes = this.Controller.GetProcesses();
             var resume = new Resume(resumeId, processes, true);
             this.Controller.RunOrder(resume);
-            this.IsWait = true;
             this.Controller.AddProcessToOrder(resumeId, this);
             this.EventLoop();
         }
@@ -68,7 +69,7 @@ namespace ThreadControl
 
         protected void EventLoop()
         {
-            while (this.IsWait) { }
+            while (this.IsWait) { Thread.Sleep(10); }
         }
     }
 }
