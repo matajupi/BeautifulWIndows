@@ -16,3 +16,7 @@ C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Debu
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BeautifulWindows.exe.config
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BeautifulWindows.exe
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BeautifulWindows.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\ThreadController.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.csproj.CopyComplete
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BWAnimator.dll
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BWAnimator.pdb

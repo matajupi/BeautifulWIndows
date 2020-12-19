@@ -7,3 +7,12 @@ C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Re
 C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.exe
 C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.pdb
 C:\Users\kousu\source\repos\Project\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.csprojAssemblyReference.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWForm\BWForm\BWForm\bin\Release\BWForm.exe.config
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWForm\BWForm\BWForm\bin\Release\BWForm.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWForm\BWForm\BWForm\bin\Release\BWForm.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.csprojAssemblyReference.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.Properties.Resources.resources
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.csproj.GenerateResource.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.csproj.CoreCompileInputs.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWForm\BWForm\BWForm\obj\Release\BWForm.pdb

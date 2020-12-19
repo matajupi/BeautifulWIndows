@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace BWForm
 {
-    static class Program
+    public static class Program
     {
         /// <summary>
         /// アプリケーションのメイン エントリ ポイントです。
@@ -24,6 +24,5 @@ namespace BWForm
                 StartPosition = FormStartPosition.Manual,
             });
         }
-
     }
 }

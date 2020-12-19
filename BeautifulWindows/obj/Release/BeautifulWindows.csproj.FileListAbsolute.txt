@@ -1,0 +1,13 @@
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Release\BeautifulWindows.exe.config
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Release\BeautifulWindows.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Release\BeautifulWindows.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Release\ThreadController.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Release\BeautifulWindows.csprojAssemblyReference.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Release\BeautifulWindows.Properties.Resources.resources
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Release\BeautifulWindows.csproj.GenerateResource.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Release\BeautifulWindows.csproj.CoreCompileInputs.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Release\BeautifulWindows.csproj.CopyComplete
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Release\BeautifulWindows.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Release\BeautifulWindows.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Release\BWAnimator.dll
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Release\BWAnimator.pdb

@@ -1,0 +1,10 @@
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\bin\Debug\TestBWAnimator.exe.config
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\bin\Debug\TestBWAnimator.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\bin\Debug\TestBWAnimator.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\bin\Debug\BWAnimator.dll
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\bin\Debug\BWAnimator.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\obj\Debug\TestBWAnimator.csprojAssemblyReference.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\obj\Debug\TestBWAnimator.csproj.CoreCompileInputs.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\obj\Debug\TestBWAnimator.csproj.CopyComplete
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\obj\Debug\TestBWAnimator.exe
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\TestBWAnimator\obj\Debug\TestBWAnimator.pdb

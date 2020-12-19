@@ -1,0 +1,6 @@
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\bin\Debug\BWAnimator.dll
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\bin\Debug\BWAnimator.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\obj\Debug\BWAnimator.csprojAssemblyReference.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\obj\Debug\BWAnimator.csproj.CoreCompileInputs.cache
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\obj\Debug\BWAnimator.dll
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\obj\Debug\BWAnimator.pdb

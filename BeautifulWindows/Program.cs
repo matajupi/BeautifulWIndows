@@ -7,6 +7,7 @@ using System.Windows.Forms;
 using System.Drawing;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using ThreadControl;
 
 namespace BeautifulWindows
 {
@@ -14,12 +15,11 @@ namespace BeautifulWindows
     {
         static void Main(string[] args)
         {
-            /* var handlers = new Dictionary<string, ThreadHandler>();
-            handlers.Add("animation_1", new Animation1());
-            handlers.Add("animation_2", new Animation2());
-            handlers.Add("animation_3", new Animation3());
-            var controller = new ThreadController(handlers);
-            controller.Start();*/ 
+            var controller = new ThreadController();
+            controller.Processes.Add(new Animation1("animation_1"));
+            controller.Processes.Add(new Animation2("animation_2"));
+            controller.Processes.Add(new Animation3("animation_3"));
+            controller.StartAll();
         }
     }
 }
