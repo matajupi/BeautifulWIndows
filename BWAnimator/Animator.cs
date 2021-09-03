@@ -159,6 +159,8 @@ namespace BWAnimator
 
         /// <summary>
         /// Show sine wave horizontal line.
+        /// 注意：当たり前だが初期の時点でYの値がperiod * radとなるためそれも踏まえてradを計算して置く必要がある。
+        /// 例えば初期の時点のsinにかかる値をMath.PI / 2としたくてperiodが2の場合radにはMath.PI / 4を入れる必要がある。
         /// </summary>
         /// <param name="center">Sine wave center line</param>
         /// <param name="magn">Magnification</param>

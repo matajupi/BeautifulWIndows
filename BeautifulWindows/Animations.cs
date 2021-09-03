@@ -17,10 +17,18 @@ namespace BeautifulWindows
 
         public override void Body()
         {
-            // this.Pattern1();
-            // this.Pattern2();
-            // this.Pattern3();
+            this.Pattern1();
+            this.Pattern2();
+            this.Pattern3();
             this.Pattern4();
+            this.Pattern5();
+            this.Pattern6();
+            this.Pattern7();
+            this.Pattern8();
+            this.Pattern9();
+            this.Pattern10();
+            this.Pattern11();
+            this.Pattern12();
         }
 
         private void Pattern1()
@@ -43,8 +51,56 @@ namespace BeautifulWindows
 
         private void Pattern4()
         {
-            Animator.ShowSineWaveHorizontalLine(0, 2, 0.3, Math.PI * 3 / 2, 2000, 20);
+            Animator.ShowSineWaveHorizontalLine(Animator.DISPLAY_HEIGHT - 180, 2, 0.25, Math.PI * 6, 2000, 20);
             this.ResumeAll("resume4");
+        }
+
+        private void Pattern5()
+        {
+            Animator.ShowSineWaveHorizontalLine(Animator.DISPLAY_CENTER_Y, 1, 2, Math.PI / 4, 2000, 20);
+            this.ResumeAll("resume5");
+        }
+
+        private void Pattern6()
+        {
+            Animator.ShowHorizontalLine(line1, 2000, 20, true);
+            this.ResumeAll("resume6");
+        }
+
+        private void Pattern7()
+        {
+            Animator.ShowHorizontalLine(line1, 2000, 20);
+            this.ResumeAll("resume7");
+        }
+
+        private void Pattern8()
+        {
+            Animator.ShowSineWaveHorizontalLine(Animator.DISPLAY_CENTER_Y, 1, 2, Math.PI / 4, 2000, 20, true);
+            this.ResumeAll("resume8");
+        }
+
+        private void Pattern9()
+        {
+            Animator.ShowSineWaveHorizontalLine(Animator.DISPLAY_CENTER_Y, 1, 2, Math.PI / 4, 9000, 20);
+            this.ResumeAll("resume9");
+        }
+
+        private void Pattern10()
+        {
+            Animator.ShowSineWaveVerticalLine(Animator.DISPLAY_CENTER_X, 1, 1, 0, 2000, 20);
+            this.ResumeAll("resume10");
+        }
+
+        private void Pattern11()
+        {
+            Animator.ShowFireworks(2000, 20);
+            this.ResumeAll("resume11");
+        }
+
+        private void Pattern12()
+        {
+            Animator.ShowFireworks(2000, 20, true);
+            this.ResumeAll("resume12");
         }
     }
 
@@ -56,10 +112,18 @@ namespace BeautifulWindows
 
         public override void Body()
         {
-            // this.Pattern1();
-            // this.Pattern2();
-            // this.Pattern3();
+            this.Pattern1();
+            this.Pattern2();
+            this.Pattern3();
             this.Pattern4();
+            this.Pattern5();
+            this.Pattern6();
+            this.Pattern7();
+            this.Pattern8();
+            this.Pattern9();
+            this.Pattern10();
+            this.Pattern11();
+            this.Pattern12();
         }
 
         private void Pattern1()
@@ -88,6 +152,50 @@ namespace BeautifulWindows
             Animator.ShowHorizontalLine(line2, 2000, 250);
             this.Wait("resume4");
         }
+
+        private void Pattern5()
+        {
+            this.Wait("resume5");
+        }
+
+        private void Pattern6()
+        {
+            Animator.ShowHorizontalLine(line2, 2000, 20);
+            this.Wait("resume6");
+        }
+
+        private void Pattern7()
+        {
+            Animator.ShowHorizontalLine(line2, 2000, 20, true);
+            this.Wait("resume7");
+        }
+
+        private void Pattern8()
+        {
+            this.Wait("resume8");
+        }
+
+        private void Pattern9()
+        {
+            this.Wait("resume9");
+        }
+
+        private void Pattern10()
+        {
+            this.Wait("resume10");
+        }
+
+        private void Pattern11()
+        {
+            Thread.Sleep(1000);
+            this.Wait("resume11");
+        }
+
+        private void Pattern12()
+        {
+            Thread.Sleep(1000);
+            this.Wait("resume12");
+        }
     }
 
     class Animation3 : ThreadProcess
@@ -98,10 +206,18 @@ namespace BeautifulWindows
 
         public override void Body()
         {
-            // this.Pattern1();
-            // this.Pattern2();
-            // this.Pattern3();
+            this.Pattern1();
+            this.Pattern2();
+            this.Pattern3();
             this.Pattern4();
+            this.Pattern5();
+            this.Pattern6();
+            this.Pattern7();
+            this.Pattern8();
+            this.Pattern9();
+            this.Pattern10();
+            this.Pattern11();
+            this.Pattern12();
         }
 
         private void Pattern1()
@@ -127,8 +243,54 @@ namespace BeautifulWindows
 
         private void Pattern4()
         {
-            Animator.ShowSineWaveHorizontalLine(0, 2, 0.3, Math.PI * 3 / 2, 2000, 20);
+            Animator.ShowSineWaveHorizontalLine(0, 2, 0.25, Math.PI * 2, 2000, 20);
             this.Wait("resume4");
+        }
+
+        private void Pattern5()
+        {
+            Animator.ShowSineWaveHorizontalLine(0, 2, 0.25, Math.PI * 2, 2000, 20);
+            this.Wait("resume5");
+        }
+
+        private void Pattern6()
+        {
+            Animator.ShowHorizontalLine(line3, 2000, 20, true);
+            this.Wait("resume6");
+        }
+        
+        private void Pattern7()
+        {
+            Animator.ShowHorizontalLine(line3, 2000, 20);
+            this.Wait("resume7");
+        }
+
+        private void Pattern8()
+        {
+            Animator.ShowSineWaveHorizontalLine(0, 2, 0.25, Math.PI * 2, 2000, 20, true);
+            this.Wait("resume8");
+        }
+
+        private void Pattern9()
+        {
+            Animator.ShowSineWaveHorizontalLine(Animator.DISPLAY_CENTER_Y, 1, 2, Math.PI * 3 / 4, 9000, 20);
+            this.Wait("resume9");
+        }
+
+        private void Pattern10()
+        {
+            Animator.ShowVerticalLine(Animator.DISPLAY_CENTER_X, 2000, 400);
+            this.Wait("resume10");
+        }
+
+        private void Pattern11()
+        {
+            this.Wait("resume11");
+        }
+
+        private void Pattern12()
+        {
+            this.Wait("resume12");
         }
     }
 }

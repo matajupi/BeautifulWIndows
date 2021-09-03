@@ -8,6 +8,7 @@ using System.Drawing;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
 using ThreadControl;
+using BWAnimator;
 
 namespace BeautifulWindows
 {
@@ -15,6 +16,7 @@ namespace BeautifulWindows
     {
         static void Main(string[] args)
         {
+            Console.ReadKey();
             var controller = new ThreadController();
             controller.Processes.Add(new Animation1("animation_1"));
             controller.Processes.Add(new Animation2("animation_2"));

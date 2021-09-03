@@ -20,3 +20,4 @@ C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debu
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\obj\Debug\BeautifulWindows.csproj.CopyComplete
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BWAnimator.dll
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\BWAnimator.pdb
+C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BeautifulWindows\bin\Debug\ThreadController.dll

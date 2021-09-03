@@ -3,8 +3,4 @@ C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\bin\Release\BW
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\obj\Release\BWAnimator.csproj.CoreCompileInputs.cache
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\obj\Release\BWAnimator.dll
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\obj\Release\BWAnimator.pdb
-C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\bin\Release\BWForm.exe
-C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\bin\Release\BWForm.pdb
-C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\bin\Release\BWForm.exe.config
 C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\obj\Release\BWAnimator.csprojAssemblyReference.cache
-C:\Users\Kosuke Futamata\source\repos\BeautifulWindows\BWAnimator\obj\Release\BWAnimator.csproj.CopyComplete
